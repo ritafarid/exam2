@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img class="i" src="images/logo.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-black">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" target="_self" aria-current="page" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" target="_self" href="categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="area.html">Area</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="ingrediants.html">Ingredients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact Us</a>
+                  </li>
+                
+              </ul>
+              <div class="mt-5" >
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-globe" style="color: #ffffff;"></i></a>
+                <p class="text-white">Copyright Â© 2019 All Rights <br>
+                    Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <form id="registrationForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 123-456-7890</small>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="repassword">Re-enter Password:</label>
+                <input type="password" id="repassword" name="repassword" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

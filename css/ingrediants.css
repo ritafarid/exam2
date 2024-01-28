@@ -1,0 +1,55 @@
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.meal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.meal img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.meal .info {
+    flex-grow: 1;
+}
+
+.meal h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.meal p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+body
+{
+    background-color: black;
+}
+
+
+
+.i
+{
+    width: 20px;
+}
+h2
+{
+    color: white;
+}
+p
+{
+    color: white;
+}

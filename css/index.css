@@ -1,0 +1,18 @@
+body
+{
+    background-color: black;
+}
+.col-md-3 h3
+{
+    color: black;
+    margin-right: auto;
+}
+.item-overlay:hover
+{
+    opacity: 1 !important;
+}
+
+.i
+{
+    width: 20px;
+}
